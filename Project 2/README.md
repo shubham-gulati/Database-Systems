@@ -12,8 +12,11 @@ In the prior checkpoints, you were encouraged to parse SQL into a relational alg
 
 
 The checkpoint 3 reference implementation optimizer implements three improvements:
+
 Sort-Merge Join: An implementation of sort-merge join for use on out-of-memory joins.
+
 1-Pass Hash Join: An implementation of the in-memory hash join algorithm.
+
 Join Specialization: Rewrite Selection + CrossProduct operators into Hash Join operators
 
 <h3>Interface</h3>

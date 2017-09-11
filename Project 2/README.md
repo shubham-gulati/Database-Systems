@@ -13,7 +13,9 @@ In the prior checkpoints, you were encouraged to parse SQL into a relational alg
 The checkpoint 3 reference implementation optimizer implements three improvements:
 
 Sort-Merge Join: An implementation of sort-merge join for use on out-of-memory joins.
+
 1-Pass Hash Join: An implementation of the in-memory hash join algorithm.
+
 Join Specialization: Rewrite Selection + CrossProduct operators into Hash Join operators
 
 <h3>Interface</h3>
@@ -25,5 +27,7 @@ Your code will be evaluated in exactly the same way as Project 1. Data will draw
        [sqlfile1] [sqlfile2] ...
        
 This example uses the following directories and files:
+
 [data]: Table data stored in '|' separated files. As before, table names match the names provided in the matching CREATE TABLE with the .dat suffix.
+
 [sqlfileX]: A file containing CREATE TABLE and SELECT statements, defining the schema of the dataset and the query to process

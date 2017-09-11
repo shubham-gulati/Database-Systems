@@ -10,12 +10,10 @@ The order in which you join tables together is incredibly important, and can cha
 <h3>Query Rewriting</h3>
 In the prior checkpoints, you were encouraged to parse SQL into a relational algebra tree.  This checkpoint is where that design choice will begins to pay off.  We've discussed expression equivalences in relational algebra, and identified several that are always good (e.g., pushing down selection operators). The reference implementation uses some simple recursion to identify patterns of expressions that can be optimized and rewrite them.  For example, if I wanted to define a new HashJoin operator, I might go through and replace every qualifying Selection operator sitting on top of a CrossProduct operator with a HashJoin.
 
+
 The checkpoint 3 reference implementation optimizer implements three improvements:
-
 Sort-Merge Join: An implementation of sort-merge join for use on out-of-memory joins.
-
 1-Pass Hash Join: An implementation of the in-memory hash join algorithm.
-
 Join Specialization: Rewrite Selection + CrossProduct operators into Hash Join operators
 
 <h3>Interface</h3>

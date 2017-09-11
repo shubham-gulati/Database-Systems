@@ -1,6 +1,6 @@
 <h3>Overview: Optimize your implementation to support join algorithms.</h3>
 
-This checkpoint is, in effect, a more rigorous form of Checkpoints 1 and 2. The requirements are identical: We give you a query and some data, you evaluate the query on the data and give us a response as quickly as possible.
+This checkpoint is, in effect, a more rigorous form of Checkpoints 1. The requirements are identical: We give you a query and some data, you evaluate the query on the data and give us a response as quickly as possible.
 
 We'll be expecting a more feature-complete submission. Your code will be evaluated on more queries from TPC-H benchmark, which exercises a broader range of SQL features than the previous checkpoints did.
 

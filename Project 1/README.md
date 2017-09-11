@@ -1,4 +1,3 @@
-<h2>Checkpoint 2</h2>
 <h3>Overview: Select/Project/Aggregate, New SQL features, Limited Memory, Faster Performance</h3>
 
 Queries may include a ORDER BY clause. Because sort is a blocking, or 2-pass operator, you will need to handle both the case where you can fit everything into memory and the case where you can not.
